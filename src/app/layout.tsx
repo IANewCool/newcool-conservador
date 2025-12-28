@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Conservador - NewCooltura Informada",
+  title: "Conservador Bienes Raices Chile | NewCooltura Informada",
   description: "Calculadora de aranceles, buscador de conservadores de bienes raices y guia de tramites en Chile",
+  keywords: ["conservador bienes raices", "aranceles CBR", "inscripcion propiedad", "certificado dominio"],
+  openGraph: {
+    title: "Conservador Bienes Raices - NewCooltura Informada",
+    description: "Aranceles y tramites en conservadores",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
